@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  background-color: #565957;
+}
+#game-data {
+  /* border: 10px solid tomato; */
+  text-align: center;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#game-panel {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+}
+
+#game-panel table {
+  align-self: center;
+  border-collapse: collapse;
+}
+
+#game-panel table tr td:not(:last-child) {
+  border-right: 12px solid rgba(255, 255, 255, 0.5);
+}
+#game-panel table tr:not(:last-child) {
+  border-bottom: 12px solid rgba(255, 255, 255, 0.5);
+}
+#game-panel table tr td {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+#game-panel table tr td div {
+  font-size: 100px;
+  font-weight: 800;
+}
+#game-panel table tr td .circle::after {
+  content: "○";
+  color: rgba(255, 235, 59, 0.8);
+}
+#game-panel table tr td .cross::after {
+  content: "✕";
+  color: rgba(33, 150, 243, 0.8);
+}
